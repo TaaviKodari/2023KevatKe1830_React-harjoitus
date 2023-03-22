@@ -6,9 +6,11 @@ export const Items =()=>{
     return(
         <div>
             {
-                items.map(({img})=>
+                items.map(({img,title, description})=>
                 <Item 
+                    title={title}
                     img={img}
+                    description={description}
                 />
                 )
             }
