@@ -1,22 +1,22 @@
 import React from "react";
 import { Square } from "./Square";
 
-export const Board = () =>{
+export const Board = ({gameState}) =>{
     return(
         <div>
             <div className="row">
-                <Square/>
-                <Square/>
-                <Square/>
+                <Square className="b-bottom-r"/>
+                <Square className="b-bottom-r"/>
+                <Square className="b-bottom"/>
             </div>
             <div className="row">
-                <Square/>
-                <Square/>
-                <Square/>
+                <Square className="b-bottom-r"/>
+                <Square className="b-bottom-r"/>
+                <Square className="b-bottom"/>
             </div>
             <div className="row">
-                <Square/>
-                <Square/>
+                <Square className="b-right"/>
+                <Square className="b-right"/>
                 <Square/>
             </div>
         </div>
